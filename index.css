@@ -19,7 +19,7 @@ h1 {
 }
 ul {
   font-size: 2em;
-  font-family: 'VT323', monospace;
+  font-family: /*'VT323',*/ monospace;
 }
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
