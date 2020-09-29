@@ -47,8 +47,18 @@ ul {
   font-family: monospace;
 	list-style-type: none;
 }
+ul.bottomnav{
+	background: rgba(51,51,51,0.75);
+	padding: 3px;
+	margin: 0px 0px 0px 10vw;
+	font-size: 1em;
+	font-family: 'Major Mono Display', monospace;
+	list-style-type: none;
+	display: inline;
+}
 li {
 	padding-bottom: 20px;
+	display: inherit;
 }
 a {
   color: inherit;
@@ -79,6 +89,16 @@ a:hover {
 	background:#333;
 	color:#cc9;
 	vertical-align: middle;
+}
+.quote {
+	float: left;
+	display: block;
+	position: static;
+	font-size: 1em;
+	/*margin: 4vh 20vw 0vh 10vw;*/
+	padding:5px;
+	background:#333;
+	color:#cc9;
 }
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
