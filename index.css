@@ -1,29 +1,85 @@
 @charset "utf-8";
+
 body {
+	image-rendering: crisp-edges;
 	font-size: 100%;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: monospace;
+	padding: 0px;
+	margin: 0px;
+	color: #333;
+	text-align: left;
+}
+body.home {
 	background-color: #000;
 	background-image: url("images/bigface.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-	margin: 0;
-	padding: 0vh 0vw 0vh 10vw;
 	color: #cc9;
-	text-align: left;
+}
+div	{
+	margin: 0px;
+	padding: 0px;
 }
 h1 {
+	margin: 0;
+	padding: 4vh 20vw 0vh 10vw;
   font-size: 4em;
   font-family: 'Major Mono Display', monospace;
 }
+h2 {
+	margin: 0;
+	padding: 1em 20vw 0px 10vw;
+	font-size: 2em;
+	font-family: 'Major Mono Display', monospace;
+}
+p {
+	margin: 0;
+	padding: 1em 20vw 0px 10vw;
+	font-size: 2em;
+	font-family: monospace;
+}
 ul {
+	margin: 0;
+	padding: 1em 20vw 0px 10vw;
   font-size: 2em;
-  font-family: /*'VT323',*/ monospace;
+  font-family: monospace;
+}
+.homebutton {
+	position: fixed;
+	top: 6.7vh;
+	left: 18.2vw;
+	font-size: 1.2em;
+	background-color: #333;
+	color: #cc9;
+}
+.imagetag {
+	display: block;
+	position: relative;
+	font-size: 1.5em;
+	top: -220px;
+	left: 400px;
+	width:250px;
+	height: 30px;
+	padding:5px;
+	margin:0px;
+	background:#333;
+	color:#cc9;
+	vertical-align: middle;
 }
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+.coverpic {
+	margin-top: 20px;
+	width: 80vw;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 @keyframes blink-animation {
   to {
