@@ -94,8 +94,9 @@ a:hover {
 	float: left;
 	display: block;
 	position: static;
-	font-size: 1em;
-	/*margin: 4vh 20vw 0vh 10vw;*/
+	font-size: 1.3em;
+	width: 70vw;
+	margin: 30px 20vw 30px 10vw;
 	padding:5px;
 	background:#333;
 	color:#cc9;
