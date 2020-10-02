@@ -28,8 +28,9 @@
     e embora a <a href="https://www.google.com/search?q=ux+design&oq=ux+design" target="_blank">hiper-desenhada conveniência</a> destes serviços siga persuadindo-nos do contrário, esta nuvem não significa uma libertação informacional da materialidade de estruturas computacionais – um universo de bits desencarnados de seus corpos de silício.
   </p>
   <p>
-    a infra-estrutura física segue presente e crescente. tem peso e temperatura, e consome grandes quantidades de energia. só está cada vez menos dentro de nossas casas – menos sujeitas a nosso agenciamento individual.
+    pelo contrário, a infra-estrutura física segue presente e crescente. tem peso e temperatura, e consome grandes quantidades de energia. só está cada vez menos dentro de nossas casas – menos sujeitas a nosso agenciamento individual.
   </p>
+  <p></p>
   <div>
     <a href="https://live.infrapedia.com/app" target="_blank">
     <img src="images\netinfrasctructure.gif" alt="mapa da distribuição da infra-estrutura da internet." style="display:inline;">
@@ -40,8 +41,9 @@
       </div>
     </a>
   </div>
+  <p></p><p></p><p></p><p></p>
   <p>
-    inevitavelmente, o controle sobre as máquinas que suportam a rede mundial de computadores reproduz (e acentua) as desigualdades presentes no mundo; é, portanto, do domínio da política. a metáfora utópica da internet como rede totalmente descentralizada se desmancha frente ao mapa geográfico de sua infra-estrutura. o tráfego se concentra em nodos de grande influência sobre o fluxo da informação.
+    inevitavelmente, o controle sobre as máquinas que suportam a rede mundial de computadores reproduz (e acentua) as desigualdades presentes no mundo; é, portanto, do domínio da política. a metáfora utópica da internet como rede totalmente descentralizada se desmancha frente ao <a href="https://live.infrapedia.com/app" target="_blank">mapa geográfico de sua infra-estrutura</a>. o tráfego se concentra em nodos de grande influência sobre o fluxo da informação.
   </p>
   <p>
     para construir estruturas de conexão mais distribuídas e que reflitam as múltiplas realidades culturais de populações alternas, <a href="https://www.youtube.com/watch?v=SrA7XTDCtok" target="_blank">alguns grupos</a> propõem o aprimoramento e a utilização de tecnologias do tipo p2p (<i>peer-to-peer</i>), em que os usuários se conectam diretamente; em contraste com arquiteturas do tipo cliente-servidor, em que as conexões entre os usuários são mediadas por um sistema centralizado.
@@ -50,7 +52,7 @@
     este movimento demonstra uma atitude de soberania e agenciamento sobre seus próprios dados, e se apoia em diversas iniciativas de software livre e aberto para o gerenciamento de protocolos de conexão e criptografia. o objetivo é ter redes mais democráticas e livres, resistentes a ações arbitrárias de agentes centralizados, como a censura (ou o impulsionamento arbitrário) de conteúdos ou a negociação de dados pessoais para a utilização no marketing.
   </p>
   <p>
-    somada a essa camada de software, também se coloca a necessidade de retomar o controle sobre a estrutura material que suporta a vida digital – os computadores onde estão guardadas todas essas informações.
+    somada a essa camada de software, também se coloca a necessidade de retomar o controle sobre a estrutura material que suporta a vida digital – os computadores onde estão guardadas todas essas informações. por isso, inspirado no projeto <a href="https://n-o-d-e.net/nano_server2.html" target="_blank">NODE NANO SERVER V2</a>, construí este website a partir de linguagem simples html e css (você está convidado a consultar o código fonte) e preparei a estrutura para hospedá-lo em minha própria casa, utilizando um computador de placa única (SBC) de baixo custo e baixo consumo de energia.
   </p>
   <div>
     <img src="images/pi0server_01.gif" alt="foto em baixa resolução de um aparelho eletrônico." style="display:block;">
@@ -58,9 +60,36 @@
       <span style="vertical-align:middle">======&gt; <i>você está aqui</i></span>
     </div>
   </div>
-
+  <p></p>
+  <p>
+    um <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target="_blank"><i>raspberry pi 0 w</i></a> integra apenas as funções essenciais para executar o software do servidor: processamento, memória volátil e conectividade via wi-fi. o armazenamento dos arquivos do site fica sob responsabilidade de um cartão de memória <i>micro-sd</i> inserido na placa. o conjunto se finaliza com um case protetor feito de acrílico cortado a laser e uma fonte chaveada de 5 volts modificada para alimentar a placa diretamente pelos pinos GPIO.
+  </p>
+  <p>
+    todo o software utilizado é de código aberto: na base da pilha está o sistema operacional <a href="https://www.raspberrypi.org/downloads/raspberry-pi-os/" target="_blank"><i>raspberry OS</i></a> (uma distribuição do debian linux específica para as placas raspberry pi) na versão lite, que não inclui interface gráfica. as requisições <i>http</i> para o servidor são gerenciadas pelo <a href="https://www.nginx.com/" target="_blank"><i>nginx</i></a>, que está instalado num container <a href="https://www.docker.com/" target="_blank"><i>docker</i></a> quarentenado no sistema.
+  </p>
+  <p>
+    como a minha conexão doméstica não permite um IP externo fixo <span style="color:#cc9">(obrigado vivo fibra)</span>, para que você consiga acessar este site sempre utilizando a mesma URL é necessário o <a href="https://www.duckdns.org/" target="_blank"><i>duck DNS</i></a>, um serviço externo que reconfigura em tempo real o domínio sempre que o IP do servidor muda, mantendo o apontamento correto.
+  </p>
+  <p>
+    por fim, já que se trata de um sistema headless (que não possui tela ou dispositivos de entrada como teclado e mouse), todas as operações de instalação, configuração e manutenção são feitas em linha de comando via conexão ssh, a partir de outro computador conectado na mesma rede.
+  </p>
+  <div style="padding:5px; background:#333">
+    <img src="images/terminal_update.gif" width="400px" height="250px" alt="animação representando terminal linux recebendo o comando de atualização" style="display:block;">
+  </div>
+  <p>
+    comparada ao uso de um servidor web convencional, esta arquitetura não traz nenhuma vantagem técnica. na verdade, em quase todos os aspectos deve haver desempenho bem abaixo do esperado em qualquer serviço comercial de hospedagem de sites. este site provavelmente não suportará mais de uma dezena de acessos simultâneos.
+  </p>
+  <p>
+    no entanto, além do intenso aprendizado e da economia com as mensalidades da hospedagem e domínio, este projeto vislumbra, mesmo que por uma pequena fresta, a possibilidade prática de tomar o agenciamento sobre os dados que disponibilizamos na internet. também traz ao consciente a realidade material deste objeto virtual específico, o site, solidificado em um corpo físico que demanda algum esforço de construção e manutenção.
+  </p>
+  <p>
+    como prova de conceito ou objeto apreciativo, este servidor continuará a ser atualizado e mantido por mim até o limite de meus esforços. de fato<span style="background:#cc9"> é </span>este site encarnado em dispositivo eletrônico – se você está lendo essa página, é porque a placa raspberry pi está ligada na tomada e conectada na rede wi-fi de minha casa, rodando todo o software corretamente. esta minúscula parcela da internet, então, está desmistificada, solidificada em realidade tangível; portanto, neste nível mais básico (do hardware), sujeita a meu agenciamento direto.
+  </p>
+  <br>
+  <hr>
   <p style="font-size:1em">todo o material deste site é disponibilizado sob a licensa <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a>
   </p>
+  <br><br><br><br><br><br><br><br>
 </body>
 
 </html>

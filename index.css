@@ -63,6 +63,7 @@ li {
 a {
   color: inherit;
   text-decoration: inherit;
+	text-decoration-color: #cc9;
 }
 a:hover {
   background-color: #cc9;
