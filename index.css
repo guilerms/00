@@ -22,6 +22,10 @@ div	{
 	margin: 0px;
 	padding: 0px;
 }
+img {
+	margin:0px;
+	padding:0px;
+}
 h1 {
 	margin: 0;
 	padding: 4vh 20vw 0vh 10vw;
@@ -55,6 +59,11 @@ ul.bottomnav{
 	font-family: 'Major Mono Display', monospace;
 	list-style-type: none;
 	display: inline;
+}
+ul.icons{
+	display: inline;
+	overflow-x:scroll;
+	padding: 400px 0px 40px 0px;
 }
 li {
 	padding-bottom: 20px;
@@ -115,6 +124,27 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 }
+.icons_container{
+	margin:4vh 35vw 0vh 10vw;
+}
+.gallery_container{
+	margin:4vh 5vw 0vh 10vw;
+	padding:0px;
+	height:520px;
+	overflow-x:scroll;
+}
+.gallery_quote{
+	font-size: 1.3em;
+	position: absolute;
+	top: 30vh;
+	margin:0px;
+	padding:0px 15px 0px 15px;
+	width:270px;
+	height:400px;
+	background: #333;
+	color: #cc9;
+}
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
