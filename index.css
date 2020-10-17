@@ -60,6 +60,17 @@ ul.bottomnav{
 	list-style-type: none;
 	display: inline;
 }
+p.citacao{
+	/*background-image: url("images/fog.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;*/
+	background: #cc9;
+	padding: 0.6em 20vw 0.6em 15vw;
+	font-size: 1.8em;
+	font-style: italic;
+}
 ul.icons{
 	display: inline;
 	overflow-x:scroll;
