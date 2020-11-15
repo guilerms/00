@@ -18,7 +18,46 @@
   <h1>GUILERME<br>SOUZA</h1>
   <h2>pesquisador // educador // designer // artista</h2>
   <br><br><br><br><br><br><br><br><br><br><br>
-  </a>
+  <!--
+  <a href="meta.html">-->
+    <div style="background-color: #cc9;
+              position: fixed;
+              right: 15vw;
+              bottom: 235px;
+              float:right;
+              width: 300px;
+              height: 10px;
+              color: #222;
+              margin-bottom: 20px;
+              margin-right: 20px;
+              padding: 10px 5px 5px 5px;
+              font-family: monospace;
+              font-size: 1.2em;
+              clear: both;">
+    </div>
+    <div style="background-color: #000;
+              position: fixed;
+              right: 15vw;
+              bottom: 15px;
+              float:right;
+              width: 300px;
+              height: 200px;
+              color: #bbb;
+              margin-bottom: 20px;
+              margin-right: 20px;
+              padding: 10px 5px 5px 5px;
+              font-family: monospace;
+              font-size: 1.2em;
+              clear: both">
+      <span style="color:#0f0;">pi@pi0server</span>:<span style="color:#09f;">~ $</span><br>
+      <span style="color:#0f0;">pi@pi0server</span>:<span style="color:#09f;">~ $</span><br>
+      <span style="color:#0f0;">pi@pi0server</span>:<span style="color:#09f;">~ $</span> meta<br>
+      -bash: meta: command not found<br>
+      <span style="color:#0f0;">pi@pi0server</span>:<span style="color:#09f;">~ $</span> meta.html<br>
+      -bash: meta.html: command not found<br>
+      <span style="color:#0f0;">pi@pi0server</span>:<span style="color:#09f;">~ $</span> <b class="blink">_</b><br>
+    </div>
+  <!--</a>-->
   </div>
   <div class="icons_container">
       <a href="bio.html"><img src="images/win98icons/rg2.gif" alt="ícone representando um documento de RG"></a>
