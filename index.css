@@ -47,6 +47,12 @@ p {
 	line-height: 1.7;
 	text-indent: 12%;
 }
+ol {
+	padding: 0.2em 36vw 0.2em 18vw;
+	font-size: 1.2em;
+	font-family: monospace;
+	line-height: 1.7;
+}
 ul {
 	margin: 0;
 	padding: 1em 20vw 0px 10vw;
@@ -70,9 +76,10 @@ p.citacao{
 	background-position: center;
 	background-size: cover;*/
 	background: #cc9;
-	padding: 0.6em 20vw 0.6em 15vw;
+	padding: 1em 20vw 1em 18vw;
 	font-size: 1.8em;
 	font-style: italic;
+	text-indent: 0px;
 }
 ul.icons{
 	display: inline;
