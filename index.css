@@ -94,6 +94,7 @@ a {
   color: inherit;
   text-decoration: inherit;
 	text-decoration-color: #cc9;
+	font-weight: bold;
 }
 a:hover {
   background-color: #cc9;
