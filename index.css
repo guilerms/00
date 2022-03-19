@@ -92,9 +92,10 @@ li {
 }
 a {
   color: inherit;
-  text-decoration: inherit;
+  text-decoration: underline;
 	text-decoration-color: #cc9;
-	font-weight: bold;
+	/*font-weight: bold;*/
+
 }
 a:hover {
   background-color: #cc9;
