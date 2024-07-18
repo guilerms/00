@@ -81,6 +81,10 @@ p.citacao{
 	font-style: italic;
 	text-indent: 0px;
 }
+p.licensenote{
+	font-size:1em;
+	text-indent: 0px;
+}
 ul.icons{
 	display: inline;
 	overflow-x:scroll;
