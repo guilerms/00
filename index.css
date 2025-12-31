@@ -112,6 +112,9 @@ a:hover {
 	background-color: #333;
 	color: #cc9;
 }
+.gallerypic {
+	image-rendering: auto;
+}
 .imagetag {
 	float: left;
 	display: block;
